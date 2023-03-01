@@ -37,7 +37,6 @@ declare namespace echarts {
                 yAxisIndex?: number | number[] | undefined;
                 radiusAxisIndex?: number | number[] | undefined;
                 angleAxisIndex?: number | number[] | undefined;
-                singleAxisIndex?: number | number[] | undefined;
                 filterMode?: 'filter' | 'weakFilter' | 'empty' | 'none' | undefined;
                 start?: number | undefined;
                 end?: number | undefined;
@@ -66,6 +65,7 @@ declare namespace echarts {
                 show?: boolean | undefined;
                 backgroundColor?: string | undefined;
                 dataBackground?: object | undefined;
+                selectedDataBackground?: object | undefined;
                 fillerColor?: string | undefined;
                 borderColor?: string | undefined;
                 handleIcon?: string | undefined;
@@ -84,7 +84,6 @@ declare namespace echarts {
                 yAxisIndex?: number | number[] | undefined;
                 radiusAxisIndex?: number | number[] | undefined;
                 angleAxisIndex?: number | number[] | undefined;
-                singleAxisIndex?: number | number[] | undefined;
                 filterMode?: 'filter' | 'weakFilter' | 'empty' | 'none' | undefined;
                 start?: number | undefined;
                 end?: number | undefined;
@@ -104,6 +103,11 @@ declare namespace echarts {
                 top?: string | number | undefined;
                 right?: string | number | undefined;
                 bottom?: string | number | undefined;
+                width?: string | number | undefined;
+                height?: string | number | undefined;
+                brushSelect?: boolean | undefined;
+                brushStyle?: object | undefined;
+                emphasis?: object | undefined;
             }
         }
     }
